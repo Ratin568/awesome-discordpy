@@ -13,6 +13,7 @@ ALWAYS create a new branch with your proposed changes. Thank you!
 - If a duplicate item exists, discuss why the new item should replace it.
 - Check your spelling & grammar.
 - The item must follow this format:
-  ```
+
+  ```bash
   - [item name](https link) - Description beginning with capital, ending in period.
   ```

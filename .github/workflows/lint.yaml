@@ -15,13 +15,17 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: "checkout repo"
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
+        - name: "Setup mise"
+          uses: jdx/mise-action@v2
           with:
-            fetch-depth: 0
-        - name: asdf_install
-          uses: asdf-vm/actions/install@v1
+            install: true
+            cache: true
+            mise_toml: |
+              [tools]
+              nodejs = "latest"
         - name: "linting: ${{ matrix.files }}"
-          run: npx -y awesome-lint ${{ matrix.files }}
+          run: mise x -- npx -y awesome-lint ${{ matrix.files }}
     awesome-bot:
       strategy:
         fail-fast: false
@@ -31,15 +35,16 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: "checkout repo"
-          uses: actions/checkout@v2.0.0
+          uses: actions/checkout@v4
+        - name: "Setup mise"
+          uses: jdx/mise-action@v2
           with:
-            fetch-depth: 0
-        - name: "setup ruby"
-          uses: ruby/setup-ruby@v1
-          with:
-            ruby-version: 3.0.1
-            bundler-cache: true
+            install: true
+            cache: true
+            mise_toml: |
+              [tools]
+              ruby = "3.0.1"
         - name: "install awesome-bot"
-          run: gem install awesome_bot
+          run: mise x -- gem install awesome_bot
         - name: "linting: ${{ matrix.files }}"
-          run: awesome_bot --allow-redirect ${{ matrix.files }}
+          run: mise x -- awesome_bot --allow-redirect ${{ matrix.files }}
