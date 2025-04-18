@@ -82,7 +82,7 @@ An Awesome list for all things Discord.py
 - [keizaiya/discord-ext-flow](https://github.com/keizaiya/discord-ext-flow) - This library extends discord.ui, providing UI control based on state flows.
 - [sizumita/discord-ext-ui](https://github.com/sizumita/discord-ext-ui) - An extension of discord-ui that adds some quality-of-life features.
 - [Seniatical/dpy-paginator](https://github.com/Seniatical/dpy-paginator) -  A simple pagination library for discord.py, comes with support for dropdown, button based pagination.
-- [vcv88/discord-ext-dyn](https://github.com/vcv88/discord-ext-dyn) - An extension for handling dynamic modals/buttons/select menus
+- [vcv88/discord-ext-dyn](https://github.com/vcv88/discord-ext-dyn) - An extension for handling dynamic modals/buttons/select menus.
 
 ### Inter-Process Communication
 
@@ -147,6 +147,7 @@ An Awesome list for all things Discord.py
 - [lykn/Buttons](https://gist.github.com/lykn/bac99b06d45ff8eed34c2220d86b6bf4) - A gist which shows/tells you how to make buttons using discord.py v2.
 - [lykn/Selects or Dropdowns](https://gist.github.com/lykn/a2b68cb790d6dad8ecff75b2aa450f23) -  A gist explaining the right way to make drop down menus/select menus/selects in discord.py v2.
 - [Ikusaba-san/Cog Methods](https://gist.github.com/Ikusaba-san/69115b79d33e05ed07ec4a4f14db83b1) - A list of all special cog methods.
+- [Painezor/Checks](https://gist.github.com/Painezor/eb2519022cd2c907b56624105f94b190) - A list of built-in Checks for the commands extension of discord.py.
 
 ## Additional Resources
 
