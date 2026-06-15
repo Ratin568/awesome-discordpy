@@ -161,6 +161,7 @@ An Awesome list for all things Discord.py
 - [pycord](https://github.com/Pycord-Development/pycord) - Pycord, a maintained fork of discord.py, is a python wrapper for the Discord API.
 - [mccoderpy/discord.py-message-components](https://github.com/mccoderpy/discord.py-message-components) - A "fork" of discord.py library made by Rapptz with implementation of the Discord Message-Components & many other features by mccoderpy.
 - [tibue99/ezcord](https://github.com/tibue99/ezcord) - An easy-to-use extension for Discord.py and Pycord.
+- [Titan Framework](https://github.com/Ratin568/titan-framework) - A modular, event-driven Discord bot framework with priority-based module loading and service container.
 
 ## Archived/Deprecated
 
